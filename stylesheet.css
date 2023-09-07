@@ -63,6 +63,14 @@ li {
   flex-direction: column;
 }
 
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: block;
+}
+
 .background-sphere {
   border-radius: 1203px;
   background: rgba(117, 180, 254, 0.13);
@@ -375,12 +383,13 @@ li {
 }
 
 .contacts-block__contact {
+  box-sizing: border-box;
   color: #2D4059;
   border-radius: 50px;
   background: rgba(228, 225, 225, 0.35);
   padding: 10px 15px;
   margin-top: 10px;
-  font-size: 20px;
+  font-size: 19.5px;
   font-weight: 500;
   line-height: 19.5px;
   letter-spacing: 0.2px;
@@ -394,8 +403,128 @@ li {
   background: #2DC071;
   border-radius: 50px;
   text-align: center;
-  font-size: 20px;
+  font-size: 19.5px;
   font-weight: 500;
   line-height: 19.5px;
   letter-spacing: 0.2px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 860px) {
+  .list-block {
+    flex-direction: column;
+    gap: 60px;
+  }
+  .block-image {
+    margin: 0 auto;
+  }
+  .background-sphere {
+    width: 862px;
+    height: 875px;
+  }
+  .sphere-1 {
+    left: -393px;
+  }
+  .sphere-2 {
+    right: -823px;
+  }
+  .disc-price-block {
+    gap: 15px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .contacts {
+    gap: 40px;
+    flex-direction: column;
+  }
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+  .list__title-teacher {
+    text-align: center;
+  }
+  .separator {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .contacts-block__contact {
+    border-radius: 20px;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  .contacts-block__contact a {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .block-title {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .list__title {
+    text-align: center;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .postintro-desk {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .intro__title {
+    font-size: 35px;
+    line-height: 42px;
+  }
+  .block-90 {
+    margin-top: 50px;
+  }
+  .block-112 {
+    margin-top: 70px;
+  }
+  .block-162 {
+    margin-top: 100px;
+  }
+  .teachers-block .list li::before {
+    min-width: 5px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .intro__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .contacts-block__contact {
+    font-size: 16.5px;
+  }
+  .list-block {
+    gap: 60px;
+    gap: 30px;
+  }
+  .block-image {
+    width: 90%;
+  }
+  .teacher-image {
+    width: 240px;
+    height: 240px;
+  }
+  .price-block__note {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .price-block__note {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .disc-price-block {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .list li {
+    font-size: 15px;
+  }
 }
