@@ -382,12 +382,23 @@ li {
   margin-bottom: 0;
 }
 
+.contacts-block__contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-top: 50px;
+}
+.contacts-block__contact-container img {
+  width: 250px;
+  height: 250px;
+  border-radius: 200px;
+}
+
 .contacts-block__contact {
   box-sizing: border-box;
   color: #2D4059;
-  border-radius: 50px;
   background: rgba(228, 225, 225, 0.35);
-  padding: 10px 15px;
   margin-top: 10px;
   font-size: 19.5px;
   font-weight: 500;
@@ -395,10 +406,16 @@ li {
   letter-spacing: 0.2px;
   width: 100%;
   display: flex;
+  border-radius: 20px;
+  padding: 15px;
+  flex-direction: column;
+  max-width: 400px;
+  text-align: center;
+  gap: 15px;
 }
 .contacts-block__contact a {
   padding: 10px 15px;
-  margin: -10px -15px -10px auto;
+  margin: 0 auto;
   color: #FFF;
   background: #2DC071;
   border-radius: 50px;
