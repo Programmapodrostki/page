@@ -428,6 +428,12 @@ li {
   align-items: center;
 }
 
+.video
+{
+  max-width: 500px;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 860px) {
   .list-block {
     flex-direction: column;
@@ -483,6 +489,11 @@ li {
   }
   .block-162 {
     margin-top: 112px;
+  }
+  .video
+  {
+    max-width: 90%;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 480px) {
