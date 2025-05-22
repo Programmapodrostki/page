@@ -270,13 +270,31 @@ li {
 
 .price-plate {
   background: #96BB7C;
-  padding: 15px 50px;
-  color: #FAFAFA;
   text-align: center;
   font-size: 24px;
-  font-weight: 700;
   letter-spacing: 0.1px;
-  border-radius: 50px;
+  padding: 25px 25px;
+  border-radius: 30px;
+  border: 2px solid #252B42;
+  color: #252B42;
+}
+
+.price-plate-title {
+  font-weight: 600;
+}
+.price-plate-description {
+  font-size: 16px;
+  max-width: 450px;
+  line-height: 125%;
+  margin-top: 15px;
+}
+.price-plate-price {
+  font-weight: 600;
+  margin-top: 20px;
+}
+.price-plates-container {
+  display: flex;
+  gap: 10px;
 }
 
 .price-plate--compact {
@@ -503,6 +521,9 @@ li {
   .contacts .qr {
   display: flex;
   flex-direction: column;
+  }
+  .price-plates-container {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 700px) {
