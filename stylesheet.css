@@ -535,6 +535,7 @@ li {
   .videos-container {
     flex-direction: column;
     gap: 25px;
+    align-items: center;
   }  
   .contacts {
     gap: 40px;
