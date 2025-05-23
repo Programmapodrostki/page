@@ -446,6 +446,10 @@ li {
   align-items: center;
 }
 
+.videos-container {
+display: flex;
+}
+
 .video
 {
   max-width: 500px;
@@ -502,6 +506,10 @@ li {
     flex-direction: column;
     text-align: center;
   }
+  .videos-container {
+    flex-direction: column;
+    gap: 25px;
+  }  
   .contacts {
     gap: 40px;
     flex-direction: column;
