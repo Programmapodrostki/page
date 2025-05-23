@@ -458,6 +458,21 @@ li {
   border-radius: 30px;
 }
 
+.video-review-text {
+  max-width: 280px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2D4059;
+  font-size: 16px;
+  font-weight: 500;
+
+  name {
+    font-weight: 600;
+    font-size: 20px;
+    margin-botton: 5px;
+  }
+}
+
 .video
 {
   max-width: 500px;
