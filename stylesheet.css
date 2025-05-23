@@ -456,6 +456,7 @@ li {
   max-width: 500px;
   max-height: 500px;
   border-radius: 30px;
+  margin-top: auto;
 }
 
 .video-review-text {
@@ -465,11 +466,13 @@ li {
   color: #2D4059;
   font-size: 16px;
   font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 
   name {
     font-weight: 600;
     font-size: 20px;
-    margin-botton: 5px;
   }
 }
 
